@@ -16,10 +16,7 @@ WDValue = document.getElementById("WDValue");
 PValue = document.getElementById("PValue");
 Forecast = document.querySelector(".Forecast");
 
-// -------------------------
-// DEFINE API ENDPOINTS FIRST
-// -------------------------
-const API_KEY = "e9f94cef31a1e35e5984dc509db49b89";
+const API_KEY = "YOUR-API-KEY";
 
 const WEATHER_API_ENDPOINT =
     `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}&units=metric&q=`;
@@ -117,4 +114,5 @@ function formatUnixTime(dtValue,offSet,options={}) {
 
 function getLongFormateDateTime(dtValue,offSet,options){
     return formatUnixTime(dtValue,offSet,options);
+
 }
