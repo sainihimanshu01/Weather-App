@@ -24,9 +24,7 @@ const WEATHER_API_ENDPOINT =
 const WEATHER_FORECAST_ENDPOINT =
     `https://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}&units=metric&`;
 
-// -------------------------
-// MAIN FUNCTION
-// -------------------------
+
 
 function getWindDirection(deg) {
     const directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
@@ -116,3 +114,4 @@ function getLongFormateDateTime(dtValue,offSet,options){
     return formatUnixTime(dtValue,offSet,options);
 
 }
+
